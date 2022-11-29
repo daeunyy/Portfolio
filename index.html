@@ -5,8 +5,148 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🥕다은이의 포트폴리오🥕</title>
+    <style>
+        html, body {
+            min-height: 100%;
+        }
+        /* navbar라는 id를 가진 것에 적용 */
+        #navbar {
+            height: 30px;
+            width: 100%;
+        }
+        /* navbar라는 id를 가진 것 안에 ul태그 안에 li태그에 적용 */
+        #navbar ul li {
+            list-style: none;
+            color: white;
+            background-color: rgb(202, 89, 74);
+            float: left;
+            line-height: 30px;
+            text-align: center;
+        }
+        /* navbar라는 id를 가진 것 안에 menuLink라는 클래스를 가진 것에 적용 */
+        #navbar .menuLink {
+            text-decoration: none;
+            color: white;
+            display: block;
+            width: 220px;
+            font-size: 12px;
+            font-weight: bold;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            
+        }
+        #imgdiv{
+            width: 100%;
+            height: 300px;
+            margin-top: 30px;
+            float: left;
+            margin-bottom: 140px;
+        }
+        /* imgdiv라는 id를 가진것 안에 ul 태그 안에 li에 적용 */
+        #imgdiv ul li
+        {
+            list-style: none;
+        }
+        /* text-center라는 클래스를 가진 것에 적용 */
+        .text-center{
+            text-align: center;
+        }
+        .container{
+            width: 100%;
+            padding-right: var(--bs-gutter-x, 0.75rem);
+            padding-left: var(--bs-gutter-x, 0.75rem);
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .text-uppercase {
+            text-transform: uppercase !important;
+        }
+        h2.section-heading{
+            font-size: 2.5rem;
+            margin-top: 0;
+            /* margin-bottom: 1rem; */
+        }
+        .container{
+            width: 70%;
+            margin: auto;
+            overflow: hidden;
+        }
+        div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 180px;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+        
+    </style>
 </head>
-<body>
-    <h1>포트폴리오</h1>
+<body class="has-touch link-transition disable-download">
+    <div class="page-background-video page-background-video-with-panel"></div>
+     <!-- Navigation-->
+    <nav id="navbar" >
+        <ul>
+            <li><a class="menuLink" href="#">❤️❄️다은이❄️❤️</a></li>
+            <li><a class="menuLink" href="#imgdiv">포트폴리오 소개</a></li>
+            <li><a class="menuLink" href="#">Ministries</a></li>
+            <li><a class="menuLink" href="#">Community</a></li>
+            <li><a class="menuLink" href="#">Locations</a></li>
+        </ul>
+    </nav>
+    <div id="imgdiv">
+        <img src="./img/로고.jpg" style="height: 400px;  padding-left: 20%; float: left;">
+        <ul>
+            <li id="dot" style="padding-top: 10px;"><h4>유다은의 포트폴리오</h4></li>
+            <li>안녕하세요. 청운대학교 광고홍보학과에 재학중인 학생입니다.</li>
+            <li>저는 지금까지 마케터가 되기 위해 다음과 같은 서포터즈 대외활동을 해왔습니다.</li>
+            <li style="list-style:circle; margin-top: 25px; font-style:oblique;">춘천술페스타</li>
+            <li style="list-style:circle; margin-top: 15px; font-style:oblique;">베이커리어</li>
+            <li style="list-style:circle; margin-top: 15px; font-style:oblique;">더마비안</li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="gallery">
+            <a target="_blank">
+              <img src="./img/슬라이드1.JPG" width="600" height="400">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
+        
+        <div class="gallery">
+            <a target="_blank">
+              <img src="./img/2차 개인과제 2_1.jpg" width="600" height="400">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
+          
+        <div class="gallery">
+            <a target="_blank">
+              <img src="./img/IMG_3831.JPG" width="600" height="400">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
+          
+        <div class="gallery">
+            <a target="_blank">
+              <img src="./img/더마비 1차 1.png" width="600" height="400">
+            </a>
+            <div class="desc">Add a description of the image here</div>
+        </div>
+       
+    </div>
+    
+
 </body>
 </html>
